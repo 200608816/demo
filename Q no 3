@@ -1,0 +1,46 @@
+Question no 2
+Write (and evaluate) python expressions that answer these questions:
+a. How many letters are there in 'Supercalifragilisticexpialidocious'?
+b. Does 'Supercalifragilisticexpialidocious' contain 'ice' as a substring?
+The number of letters in 'Supercalifragilisticexpialidocious' is: 34
+Does 'Supercalifragilisticexpialidocious' contain 'ice' as a substring? True
+The longest word is: Supercalifragilisticexpialidocious
+The first composer in the dictionary is: Bartok
+The last composer in the dictionary is: Buxtehude
+
+#a.
+
+word = 'Supercalifragilisticexpialidocious'
+num_letters = len(word)
+print(f"The number of letters in '{word}' is: {num_letters}")
+
+# b. 
+
+substring = 'ice'
+contains_substring = substring in word
+print(f"Does '{word}' contain '{substring}' as a substring? {contains_substring}")
+
+# c. 
+
+words = ['Supercalifragilisticexpialidocious', 'Honorificabilitudinitatibus', 'Bababadalgharaghtakamminarronnkonn']
+longest_word = max(words, key=len)
+print(f"The longest word is: {longest_word}")
+
+# d.
+
+composers = ['Berlioz', 'Borodin', 'Brian', 'Bartok', 'Bellini', 'Buxtehude', 'Bernstein']
+first_composer = min(composers)
+last_composer = max(composers)
+print(f"The first composer in the dictionary is: {first_composer}")
+print(f"The last composer in the dictionary is: {last_composer}")
+
+
+
+
+OUTPUT
+
+The number of letters in 'Supercalifragilisticexpialidocious' is: 34
+Does 'Supercalifragilisticexpialidocious' contain 'ice' as a substring? True
+The longest word is: Supercalifragilisticexpialidocious
+The first composer in the dictionary is: Bartok
+The last composer in the dictionary is: Buxtehude
